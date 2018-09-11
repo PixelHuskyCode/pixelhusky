@@ -22,3 +22,8 @@ body {
         padding-top: 60px;
     }
 }
+
+.progress-label {
+    float: left;
+    margin-right: 1em;
+}
