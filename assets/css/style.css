@@ -1,9 +1,27 @@
+.link-unstyled {
+    font-style: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    text-decoration: none;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    border-radius: inherit;
+    border: inherit;
+    outline: inherit;
+    box-shadow: inherit;
+    padding: inherit;
+    vertical-align: inherit;
+}
+
 h1 {
     font: Helvetica;
 }
 
 body {
-    background-color: #666666;
+    background-color: #ffffff;
 }
 
 #home-img {
@@ -11,19 +29,143 @@ body {
     
 }
 
+.main-hero {
+    width: 100vw;
+    max-height: 50vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.hero-text {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+.hero-text .lead {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.post-hero {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.intro-text {
+    padding-bottom: 2rem;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top:15px;
+    margin-bottom: 15px; /* Added */
+}
+    
 .v-center {
    display: flex;
    align-items: center;
 }
 
-
-@media (min-width: 979px) {
-    body {
+body {
         padding-top: 60px;
     }
-}
 
 .progress-label {
     float: left;
     margin-right: 1em;
 }
+
+.footer {
+    background-color: #000000;
+    color: white;
+}
+
+.footer .row {
+    padding: 2rem 0 2rem 0;
+}
+
+.footer .footer-space {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer-nav {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+/* Media Breaks */
+
+/*  when width is less than x, do y  */
+
+@media (max-width: 576px)  { 
+    .intro-text {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    
+    .hero-text .lead {
+        display: none;
+    }
+    
+/*
+    .main-hero {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+    }
+    
+    .main-hero img{
+        width: 400px;
+        height: 300px;
+        margin: -75px 0 0 -100px;
+    }
+*/
+    
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) { 
+    .hero-text .lead {
+        font-size: 2vw;
+    }
+    
+}
+
+
+@media (max-width: 992px) {
+    
+}
+
+/*  when width is greater than x, do y */
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+        .intro-text{
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+    
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
