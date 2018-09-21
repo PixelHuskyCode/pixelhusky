@@ -196,6 +196,80 @@ body {
     padding-right: 3rem;
 }
 
+ul#blue-bullet li, ul#red-bullet li {
+list-style-type:none;
+
+}
+
+ul#blue-bullet li:nth-child(1){
+ 	background-image:url("/assets/Images/blue1.svg");
+    background-size: 27px;
+    background-repeat:no-repeat;
+    background-position:0px 12px;
+    padding:0 0 0 42px;
+/*    background-color: #3880F4;*/
+}
+
+ul#blue-bullet li:nth-child(2){
+ 	background-image:url("/assets/Images/blue2.svg");
+    background-size: 27px;
+    background-repeat:no-repeat;
+    background-position:0px 12px;
+    padding:0 0 0 42px;
+/*    background-color: #3880F4;*/
+}
+
+ul#blue-bullet li:nth-child(3){
+ 	background-image:url("/assets/Images/blue3.svg");
+    background-size: 27px;
+    background-repeat:no-repeat;
+    background-position:0px 12px;
+    padding:0 0 0 42px;
+/*    background-color: #3880F4;*/
+}
+
+ul#blue-bullet li:nth-child(4){
+ 	background-image:url("/assets/Images/blue4.svg");
+    background-size: 27px;
+    background-repeat:no-repeat;
+    background-position:0px 12px;
+    padding:0 0 0 42px;
+/*    background-color: #3880F4;*/
+}
+
+ul#red-bullet li:nth-child(1){
+ 	background-image:url("/assets/Images/red1.svg");
+    background-size: 27px;
+    background-repeat:no-repeat;
+    background-position:0px 12px;
+    padding:0 0 0 42px;
+/*    background-color: #3880F4;*/
+}
+
+ul#red-bullet li:nth-child(2){
+ 	background-image:url("/assets/Images/red2.svg");
+    background-size: 27px;
+    background-repeat:no-repeat;
+    background-position:0px 12px;
+    padding:0 0 0 42px;
+/*    background-color: #3880F4;*/
+}
+
+ul#red-bullet li:nth-child(3){
+ 	background-image:url("/assets/Images/red3.svg");
+    background-size: 27px;
+    background-repeat:no-repeat;
+    background-position:0px 12px;
+    padding:0 0 0 42px;
+/*    background-color: #3880F4;*/
+}
+
+li.dot{
+    line-height: 50px;
+    vertical-align: middle;
+    width: 200px;
+}
+
 .events h1 {
     color: #eb9498;
 }
@@ -211,6 +285,20 @@ body {
 .progress-label {
     float: left;
     margin-right: 1em;
+}
+
+.progress-counter {
+    width: 105%;
+    color: #000;
+}
+
+.question {
+    font-weight: 500;
+}
+
+.answer {
+    text-indent: 3em;
+    padding-bottom: 1rem;
 }
 
 .footer {
@@ -278,10 +366,25 @@ body {
     padding-top: 2rem;
 }
     
+    #red-bullet, #blue-bullet {
+        
+        padding-top: 3rem;
+    }
+    
 }
 
 
 @media (max-width: 992px) {
+    
+}
+
+@media (max-width: 1200px) { 
+
+    .teams-col {
+        
+        padding-bottom: 5rem;
+        
+    }
     
 }
 
