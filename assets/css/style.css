@@ -1,3 +1,50 @@
+/* Bootstrap Overides */
+
+hr {
+    border-top: 3px solid rgba(0,0,0,.1);
+}
+
+.bg-light {
+    background-color: #ffffff!important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4980EC;
+    border-color: #4980EC;
+}
+
+/*
+.btn-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+*/
+
+.img-thumbnail {
+    padding: 0; 
+    background-color: #fff;
+    border: 0px; 
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: #f2f2f2;
+    background-clip: border-box;
+    border: 0px; 
+    border-radius: .25rem;
+}
+
+.card-header {
+    background-color: #eb9498;
+    border-bottom: 0px;
+}
+
+/* Main CSS */
+
 .link-unstyled {
     font-style: inherit;
     color: inherit;
@@ -39,6 +86,15 @@ body {
     margin-right: -50vw;
 }
 
+.main-hero img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 .hero-text {
     position: relative;
     text-align: center;
@@ -51,6 +107,51 @@ body {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.tab {
+    background-color: #555;
+    color: #000;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 25px 16px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    width: 50%;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.tab-student {
+    background-color: #B9D4FF;
+/*    box-shadow: inset 20px 0 20px -20px rgba(51, 51, 51, 0.15); */
+}
+
+.tab-student:hover {
+    background-color: #9bc2ff;
+    text-decoration: none;
+    color: #000;
+}
+
+.tab-sponsor {
+    background-color: #FFD5D5;
+/*    box-shadow: inset 20px 0 20px -20px rgba(51, 51, 51, 0.15); */
+}
+
+.tab-sponsor:hover {
+    background-color: #f4a7ac;
+    text-decoration: none;
+    color: #000;
+/*    box-shadow: inset 20px 0 20px -20px rgba(51, 51, 51, 0.15); */
+}
+
+.tab-active {
+    background-color: #fff;
+}
+
+.tab-active:hover {
+    background-color: #fff;
 }
 
 .post-hero {
@@ -78,6 +179,35 @@ body {
         padding-top: 60px;
     }
 
+.timeline {
+/*    padding-left: 3rem;*/
+/*    padding-right: 3rem;*/
+    padding-top: 4rem;
+}
+
+.section {
+    
+    padding-top: 4rem;
+    
+}
+
+.content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.events h1 {
+    color: #eb9498;
+}
+
+.event-link {
+    color: #dd868a;
+}
+
+.event-link:hover {
+    color: #b96569;
+}
+
 .progress-label {
     float: left;
     margin-right: 1em;
@@ -89,7 +219,7 @@ body {
 }
 
 .footer .row {
-    padding: 2rem 0 2rem 0;
+/*    padding: 2rem 0 2rem 0;*/
 }
 
 .footer .footer-space {
@@ -143,6 +273,11 @@ body {
         font-size: 2vw;
     }
     
+    .majors p, .class-standings p {
+    padding-bottom: 0px;
+    padding-top: 2rem;
+}
+    
 }
 
 
@@ -161,6 +296,13 @@ body {
             padding-top: 1rem;
             padding-bottom: 2rem;
         }
+    
+        .progress-bar {
+            margin-top: 5px;
+    }
+        .majors .row, .class-standings .row {
+            padding-top: 1rem;
+}
     
 }
 
