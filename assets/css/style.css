@@ -183,6 +183,13 @@ body {
 /*    padding-left: 3rem;*/
 /*    padding-right: 3rem;*/
     padding-top: 4rem;
+    padding-bottom: 2rem;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .section {
